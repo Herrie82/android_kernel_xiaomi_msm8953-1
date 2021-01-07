@@ -200,6 +200,7 @@ ifeq ($(call cc-option-yn, -Wmaybe-uninitialized),y)
 EXTRA_CFLAGS += -Wmaybe-uninitialized
 endif
 #EXTRA_CFLAGS += -Wmissing-prototypes
+EXTRA_CFLAGS += -Wno-error=memset-elt-size
 
 ifeq ($(call cc-option-yn, -Wheader-guard),y)
 EXTRA_CFLAGS += -Wheader-guard
